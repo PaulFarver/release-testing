@@ -1,1 +1,3 @@
 targetBranch: "develop"
+somekey: {}
+  invalidcontext: invalidvalue
