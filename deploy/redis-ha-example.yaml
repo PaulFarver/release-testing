@@ -4,7 +4,7 @@ metadata:
   name: parrot-redis-ha
   annotations:
     hello: world
-    valet.io/automated: "false"
+    valet.io/automated: "true"
   namespace: parrot
 spec:
   chart:
