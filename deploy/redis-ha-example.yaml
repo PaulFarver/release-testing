@@ -25,3 +25,31 @@ spec:
 
     redis:
       masterGroupName: "parrot"
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: parrot-redis-ha
+  annotations:
+    hello: world
+    valet.io/automated: "false"
+  namespace: parrot
+spec:
+  chart:
+    name: redis-ha
+    repository: https://dandydeveloper.github.io/charts
+    version: 4.12.1
+  helmVersion: v3
+  releaseName: parrot-redis-ha
+  values:
+    replicas: 4
+
+    resources:
+      limits:
+        memory: 40Mi
+      requests:
+        memory: 40Mi
+        cpu: 10m
+
+    redis:
+      masterGroupName: "parrot"
