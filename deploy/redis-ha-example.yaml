@@ -5,6 +5,7 @@ metadata:
   annotations:
     hello: world
     valet.io/automated: "true"
+    filter.valet.io/chart: "semver:hello"
   namespace: parrot
 spec:
   chart:
