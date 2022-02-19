@@ -2,6 +2,8 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: parrot-redis-ha
+  annotations:
+    hello: world
   namespace: parrot
 spec:
   chart:
