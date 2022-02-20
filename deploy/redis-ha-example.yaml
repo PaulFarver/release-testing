@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   annotations:
-    filter.valet.io/chart: semver:hello
+    filter.valet.io/chart: semver:>=1.0.0
     hello: world
     valet.io/automated: "true"
   name: parrot-redis-ha
