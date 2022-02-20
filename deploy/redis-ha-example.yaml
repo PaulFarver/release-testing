@@ -11,7 +11,7 @@ spec:
   chart:
     name: appstream
     repository: https://dandydeveloper.github.io/charts
-    version: 0.4.0
+    version: 0.6.1
   helmVersion: v3
   releaseName: parrot-redis-ha
   values:
