@@ -2,16 +2,16 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   annotations:
-    filter.valet.io/chart: semver:>=1.0.0
+    filter.valet.io/chart: semver:>=0.4.0
     hello: world
     valet.io/automated: "true"
   name: parrot-redis-ha
   namespace: parrot
 spec:
   chart:
-    name: redis-ha
+    name: appstream
     repository: https://dandydeveloper.github.io/charts
-    version: 4.12.3
+    version: 0.4.0
   helmVersion: v3
   releaseName: parrot-redis-ha
   values:
