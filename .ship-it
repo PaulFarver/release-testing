@@ -1,5 +1,3 @@
 targetBranch: master
 strategy:
   type: pre-release
-changelog:
-  type: legacy
